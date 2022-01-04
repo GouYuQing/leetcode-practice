@@ -13,4 +13,4 @@
     if(isNaN(res)) return 0;
     return res;
 };
-console.log(myAtoi("words and hhh 987"));
+console.log(myAtoi("words and 987"));
