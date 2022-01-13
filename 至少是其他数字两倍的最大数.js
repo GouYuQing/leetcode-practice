@@ -9,7 +9,6 @@ var dominantIndex = function (nums) {
 	arr.sort((a, b) => a - b);
 	let max_num = arr[arr.length - 1],
 		max_second = arr[arr.length - 2];
-	console.log(max_num, max_second, nums);
 	if (max_num / max_second >= 2) {
 		index = nums.indexOf(max_num);
 	} else {
