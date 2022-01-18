@@ -8,7 +8,7 @@
 var generateParenthesis = function (n) {
 	let res = [];
 	// 左右括号所剩的数量，str是当前字符串
-	function DFS(lfet, right, str) {
+	function DFS(left, right, str) {
 		if (str.length == 2 * n) {
 			//满足条件就push
 			res.push(str);
