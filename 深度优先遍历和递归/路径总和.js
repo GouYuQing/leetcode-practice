@@ -16,7 +16,7 @@ var hasPathSum = function (root, targetSum) {
 		if (node == null) return false;
 		sum += node.val;
 		if (sum == targetSum && node.left == null && node.right == null) return true;
-		return findSum(node.left) || findSum(node.right);
+		return findSum(node.left, sum) || findSum(node.right, sum);
 	}
 	return findSum(root, 0);
 };
