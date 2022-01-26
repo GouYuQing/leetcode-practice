@@ -17,6 +17,7 @@ var combinationSum2 = function (candidates, target) {
 		}
 		for (let i = start; i < candidates.length; i++) {
 			if (i - 1 >= start && candidates[i] == candidates[i - 1]) {
+				//相同元素跳过
 				continue;
 			}
 			temp.push(candidates[i]);
